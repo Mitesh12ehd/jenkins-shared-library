@@ -19,7 +19,6 @@ def call(){
         sh "echo ${PASS} | docker login -u ${USER} --password-stdin"
 
         // push image
-        sh "docker push miteshch/demo-app:jma-2.0 ."
         sh "docker push miteshch/demo-app:jma-2.0"
     }
 }
